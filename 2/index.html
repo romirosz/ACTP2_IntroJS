@@ -12,8 +12,44 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   <head>
     <meta charset="utf-8">
     <title></title>
-  </head>
-  <body>
 
+	<style type="text/css">
+
+ .sirenas{
+  	width: 250px;
+	padding:2px;
+	padding-bottom: 20px;
+	filter: grayscale(100%);
+  }
+  .color {
+    filter: none;
+}
+
+  </style>
+  </head>
+
+  <body>
+	<h1>Sirenas</h1>
+	
+	<img class="sirenas" src="sire.jpg" alt=""> 
+	<img class="sirenas"src="sire.jpg" alt="">
+	<img class="sirenas"src="sire.jpg" alt="">
+	<img class="sirenas"src="sire.jpg" alt="">
+	<img class="sirenas"src="sire.jpg" alt="">
+	<img class="sirenas"src="sire.jpg" alt="">
+	<img class="sirenas"src="sire.jpg" alt=""> 
+	<img class="sirenas"src="sire.jpg" alt="">
+	<img class="sirenas"src="sire.jpg" alt="">
+	<img class="sirenas"src="sire.jpg" alt="">
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("img").on("click",function(){
+    	$(this).toggleClass('color');
+		});
+	});
+	</script>
   </body>
 </html>
