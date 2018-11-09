@@ -20,9 +20,10 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 	padding:2px;
 	padding-bottom: 20px;
 	filter: grayscale(100%);
+	transition: filter 1s;
   }
   .color {
-    filter: none;
+    filter: grayscale(0%);
 }
 
   </style>
@@ -47,8 +48,7 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 	<script>
 	$(document).ready(function(){
 		$("img").on("click",function(){
-    	$(this).toggleClass('color');
-    	$(".color").css("transition", "1s");
+    		$(this).toggleClass('color');
 		});
 	});
 	</script>
